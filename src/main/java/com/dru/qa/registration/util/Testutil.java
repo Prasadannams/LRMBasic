@@ -13,7 +13,7 @@ import com.dru.qa.registration.base.Testbase;
 
 public class Testutil extends Testbase{
 
-	public static long page_load = 5;
+	public static long page_load = 20;
 	public static long implict_wait = 5;
 
 	public static String Test_Data_Sheet = "E:/LRMRegistration/src/main/java/com/dru/qa/registration/testdata/LRMRgistration.xlsx";

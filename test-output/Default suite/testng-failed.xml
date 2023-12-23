@@ -5,9 +5,8 @@
     <classes>
       <class name="com.dru.qa.registration.testcases.UserManagementTest">
         <methods>
-          <include name="validateUsers" invocation-numbers="0"/>
+          <include name="uploadfile"/>
           <include name="setup"/>
-          <include name="teardown"/>
         </methods>
       </class> <!-- com.dru.qa.registration.testcases.UserManagementTest -->
     </classes>

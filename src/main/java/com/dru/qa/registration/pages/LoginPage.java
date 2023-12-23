@@ -55,19 +55,14 @@ public class LoginPage extends Helpers{
 		explicitWait(50, userName);
         sendKeys(userName, un, passWord, pwd);
 		loginButton.click();
-		String popup = otherDevice.getText();
-		try {
-		if(popup.equals("Log out of other device?")) {
+		
+		if(otherDevice.isDisplayed()) {
 			accept.click();
-		}else {
-			loginButton.click();
 		}
-		}catch(Exception e){
-			
-		}
+		
 		return new HomePage();
+		
+		
 	}
-
-	
 
 }

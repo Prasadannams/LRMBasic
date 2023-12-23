@@ -1,5 +1,10 @@
 package com.dru.qa.registration.testcases;
 
+import static org.testng.Assert.assertTrue;
+
+import java.awt.AWTException;
+
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -40,9 +45,18 @@ public class UserManagementTest extends Testbase {
 		return data;
 	}
 
-	@Test(priority = 1, dataProvider = "getLRMTestData", description = "Add new user")
+	
+	@Test(priority=1)
+	public void uploadfile() throws AWTException {
+	boolean status =usermanagementpage.clickUpload()	;
+	Assert.assertTrue(status, "Profilel picture not updated");
+	}
+	
+	@Test(priority = 2, dataProvider = "getLRMTestData", description = "Add new user")
 	public void validateUsers(String title, String fn, String ln, String gender, String em, String num,
-			String doctortype) {
+			String doctortype,  String qualification , String expsummary , String employeeID , String userName , 
+			String LicenseType , String licnum, String consulatation , String followUps , String searchFilter , String searchRoles) {
+	
 		usermanagementpage.selectHonorific(title);
 		usermanagementpage.enterFirsName(fn);
 		usermanagementpage.enterLastName(ln);
@@ -50,19 +64,30 @@ public class UserManagementTest extends Testbase {
 		usermanagementpage.enterEmail(em);
 		usermanagementpage.enterMobile(num);
 		usermanagementpage.selectLanguages();
-		usermanagementpage.selectDesignations();
-//		usermanagementpage.selectDoctorType(doctortype);
-		usermanagementpage.selectSpecilaizations();
+		usermanagementpage.selectDesignations();	
+//     	usermanagementpage.selectDoctorType(prop.getProperty(doctotType));
+		usermanagementpage.selectSpecialization();
+		usermanagementpage.selectDepartments();
+		usermanagementpage.enterQualification(qualification);
+		usermanagementpage.enterExpSummary(expsummary);
+		usermanagementpage.enterEmpID(employeeID);
+		usermanagementpage.enterUserName(userName);
+		usermanagementpage.selectMCIMOH(LicenseType);
+		usermanagementpage.enterLicenseNum(licnum);
+		usermanagementpage.enterConsultation(consulatation, followUps);
+//		usermanagementpage.selectFilters(searchFilter);
+//		usermanagementpage.selectRoles(searchRoles);
+		usermanagementpage.addRole();
 
 	}
 	
 	
 	
 	
-    @AfterMethod
-	public void teardown() throws InterruptedException {
-		Thread.sleep(30);
-		driver.quit();
-	}
+ //   @AfterMethod
+//	public void teardown() throws InterruptedException {
+//		Thread.sleep(30);
+//		driver.quit();
+//	}
 
 }
