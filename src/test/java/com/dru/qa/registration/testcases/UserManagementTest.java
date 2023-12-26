@@ -1,6 +1,5 @@
 package com.dru.qa.registration.testcases;
 
-import static org.testng.Assert.assertTrue;
 
 import java.awt.AWTException;
 

@@ -8,11 +8,18 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">26,393</td><td></td><td></td></tr>
+<tr><th colspan="8">Admin Module Suite</th></tr>
+<tr><td><a href="#t0">UserManagement High Prioirty</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">62</td><td>regression</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.dru.qa.registration.testcases.UserManagementTest</td><td><a href="#m0">uploadfile</a></td><td rowspan="1">1702021408232</td><td rowspan="1">6200</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Admin Module Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">UserManagement High Prioirty &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.dru.qa.registration.testcases.LoginTest</td><td><a href="#m0">loginToCredentials</a></td><td rowspan="1">1703581795247</td><td rowspan="1">3</td></tr><tr class="failedeven"><td><a href="#m1">validateLoginPage</a></td><td rowspan="1">1703581795226</td><td rowspan="1">10</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.dru.qa.registration.testcases.UserManagementTest#uploadfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>UserManagement High Prioirty</h2><h3 id="m0">com.dru.qa.registration.testcases.LoginTest#loginToCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.dru.qa.registration.pages.LoginPage.login(String, String)&quot; because &quot;this.loginpage&quot; is null
+	at com.dru.qa.registration.testcases.LoginTest.loginToCredentials(LoginTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.dru.qa.registration.testcases.LoginTest#validateLoginPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.dru.qa.registration.pages.LoginPage.validateLoginPage()&quot; because &quot;this.loginpage&quot; is null
+	at com.dru.qa.registration.testcases.LoginTest.validateLoginPage(LoginTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

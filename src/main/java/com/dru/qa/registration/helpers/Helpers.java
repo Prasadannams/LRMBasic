@@ -17,7 +17,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
@@ -33,6 +32,8 @@ public class Helpers extends Testbase{
 	
 //===========ResUsable Methods==============
 	
+	
+
 	public  void clickMethod(WebElement ele) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOf(ele)).isEnabled();
@@ -88,7 +89,7 @@ public class Helpers extends Testbase{
 		 ele1.sendKeys(pwd);
 	}
 	
-	public static void explicitWait(int time, WebElement ele) {
+	public  void explicitWait(int time, WebElement ele) {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(time));
 		wait.until(ExpectedConditions.visibilityOf(ele));
 	}
