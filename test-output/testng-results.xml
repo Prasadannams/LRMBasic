@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-26T14:39:55 IST" name="Admin Module Suite" finished-at="2023-12-26T14:39:55 IST" duration-ms="62">
+  <suite started-at="2023-12-28T17:27:47 IST" name="Admin Module Suite" finished-at="2023-12-28T17:27:47 IST" duration-ms="155">
     <groups>
       <group name="functional">
         <method signature="LoginTest.loginToCredentials()[pri:3, instance:com.dru.qa.registration.testcases.LoginTest@1b7cc17c]" name="loginToCredentials" class="com.dru.qa.registration.testcases.LoginTest"/>
@@ -15,9 +15,9 @@
         <method signature="LoginTest.loginToCredentials()[pri:3, instance:com.dru.qa.registration.testcases.LoginTest@1b7cc17c]" name="loginToCredentials" class="com.dru.qa.registration.testcases.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-12-26T14:39:55 IST" name="UserManagement High Prioirty" finished-at="2023-12-26T14:39:55 IST" duration-ms="62">
+    <test started-at="2023-12-28T17:27:47 IST" name="UserManagement High Prioirty" finished-at="2023-12-28T17:27:47 IST" duration-ms="155">
       <class name="com.dru.qa.registration.testcases.LoginTest">
-        <test-method signature="validateLoginPage()[pri:2, instance:com.dru.qa.registration.testcases.LoginTest@1b7cc17c]" started-at="2023-12-26T14:39:55 IST" name="validateLoginPage" finished-at="2023-12-26T14:39:55 IST" duration-ms="10" status="FAIL">
+        <test-method signature="validateLoginPage()[pri:2, instance:com.dru.qa.registration.testcases.LoginTest@1b7cc17c]" started-at="2023-12-28T17:27:47 IST" name="validateLoginPage" finished-at="2023-12-28T17:27:47 IST" duration-ms="75" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "com.dru.qa.registration.pages.LoginPage.validateLoginPage()" because "this.loginpage" is null]]>
@@ -57,7 +57,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginPage -->
-        <test-method signature="loginToCredentials()[pri:3, instance:com.dru.qa.registration.testcases.LoginTest@1b7cc17c]" started-at="2023-12-26T14:39:55 IST" name="loginToCredentials" finished-at="2023-12-26T14:39:55 IST" duration-ms="3" status="FAIL">
+        <test-method signature="loginToCredentials()[pri:3, instance:com.dru.qa.registration.testcases.LoginTest@1b7cc17c]" started-at="2023-12-28T17:27:47 IST" name="loginToCredentials" finished-at="2023-12-28T17:27:47 IST" duration-ms="4" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "com.dru.qa.registration.pages.LoginPage.login(String, String)" because "this.loginpage" is null]]>
