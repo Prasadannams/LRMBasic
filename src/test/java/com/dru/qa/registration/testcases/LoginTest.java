@@ -17,7 +17,7 @@ public class LoginTest extends Testbase {
 	HomePage homepage;
 	SoftAssert softassert;
 
-	// Calling Parent class Constructor
+	// Calling Parent class Constructor from lgintest class
 	public LoginTest() {
 		super();
 	}
